@@ -1,11 +1,11 @@
-/* Basic Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -13,62 +13,98 @@ body {
   color: #333;
 }
 
-/* Header Section */
+/* Header */
 header {
+  background: #2d3e50;
+  color: white;
   text-align: center;
-  background-color: #2d3e50;
-  color: #fff;
-  padding: 30px 20px;
+  padding: 50px 20px;
 }
 
 header h1 {
   font-size: 3em;
+  margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
-/* Section Styling */
+header .cta-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
 section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  padding: 30px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for sections */
-section:hover {
-  transform: scale(1.05); /* Slightly grow the section */
-  background-color: #f4f4f4; /* Change background color */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow */
-}
-
-/* Reveal section when it comes into view */
-section.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Section Titles */
 section h2 {
+  font-size: 2.5em;
   text-align: center;
-  color: #2d3e50;
-  font-size: 2em;
 }
 
-/* Links Styling */
-a {
-  color: #2d3e50;
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.project-card {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card a {
+  color: #4CAF50;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Contact Form */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 
